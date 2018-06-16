@@ -1,0 +1,474 @@
+@font-face {
+    font-family: IRANSans;
+    src: url('../font/IRANSans.woff2') format('woff2');
+}
+@font-face {
+    font-family: Icons;
+    src: url('../font/icons.eot');
+    src: url('../font/icons.eot?#iefix') format('embedded-opentype'),
+    url('../font/icons.woff2') format('woff2'),
+    url('../font/icons.woff') format('woff'),
+    url('../font/icons.ttf') format('truetype'),
+    url('../font/icons.svg#icons') format('svg');
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+}
+@font-face {
+    font-family: brand-icons;
+    src: url('../font/brand-icons.svg');
+url('../font/brand-icons.woff2') format('woff2'),
+url('../font/brand-icons.woff') format('woff'),
+url('../font/brand-icons.ttf') format('truetype'),
+url('../font/brand-icons.eot') format('eot');
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+}
+@font-face {
+    font-family: Segoe Print;
+    src: url('../font/segoeprb.svg');
+url('../font/segoeprb.woff2') format('woff2'),
+url('../font/segoeprb.woff') format('woff'),
+url('../font/segoeprb.ttf') format('truetype'),
+url('../font/segoeprb.eot') format('eot');
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+}
+ul{
+    list-style-type: none;
+}
+
+*,h1{
+    padding: 0 ;
+    margin: 0 ;
+    font-weight: normal;
+    font-family: IRANSans;
+
+
+}
+body{
+    direction: rtl;
+}
+*ul{
+    list-style-type: none;
+}
+.icon{
+    font-family: Font Awesome;
+}
+header{
+    background-image: url("../img/tierd-1.jpg");
+    background-repeat: no-repeat;
+    min-height: 450px;
+    z-index: -99999;
+    background-size: cover;
+}
+/*--------------------------menu-----------------------*/
+.line{
+    width: 110px;
+    height: 3px;
+    margin-top: 10px;
+    background: #0f0f10;
+}
+
+ a:nth-child(2):hover ~ .line{
+    transform: translate(-110px);
+     transition: all 1s ease-in-out;
+     background: #5c5c5c;
+}
+a:nth-child(2):hover{
+    color: #5c5c5c;
+}
+a:nth-child(3):hover ~ .line{
+    transform: translate(-220px);
+    transition: all 1s ease-in-out;
+    background: #9a9a9a;
+}
+a:nth-child(3):hover{
+    color: #9a9a9a;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 25px;
+    font-family: Segoe Print;
+    text-shadow: #4c4f52 1px 1px;
+    text-align: left;
+
+}
+
+.menu{
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 100%;
+    direction: rtl;
+
+}
+
+.menu a{
+    padding: 0 16px;
+    color: #0f0f10;
+    font-size: 17px;
+}
+.menu .aa  {
+    color: #0f0f10;
+}
+
+.m_btn{
+    float: left !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.m_btn span{
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 3px 0;
+    background: #000000;
+}
+@media screen and (max-width: 600px){
+    .menu{
+        display: none;
+        width: 100%;
+        margin-top: 20px;
+        background: #cccccc;
+        right: 0 !important;
+        top:20px;
+        z-index: 99999;
+
+    }
+    .line{
+        display: none;
+    }
+    .m_btn{
+        display: block;
+        margin-bottom: 10px;
+        z-index: 999999;
+    }
+    .menu > a {
+        margin-right: 10px;
+        padding: 10px 0;
+        float: none;
+        display: block;
+        background: #cccccc;
+
+    }
+    .menu a:hover{
+        background: #3d3e3f;
+        margin-right: 2px;
+        color: #686868;
+    }
+    .iphone .i-1 .p-i {
+        text-align: left;
+        transform: translate(-20%);
+        font-size: 15px;
+    }
+
+
+}
+@media screen and (min-width: 600px){
+    .m_btn{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+/*--------------------------------end menu---------------------------*/
+header .top-text{
+    text-align: center;
+   float: left;
+    position: absolute;
+    left: 16%;
+    top: 20%;
+
+}
+header .top-text .head{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+header .top-text p{
+    font-size: 18px;
+    text-align: center;
+}
+@media screen and (max-width: 600px),(max-width: 100px){
+
+    header .top-text .head{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    header .top-text p {
+        font-size: 13px;
+    }
+    header .top-text{
+        text-align: center;
+        margin-top: 27%;
+    }
+    header .top-text button {
+        font-size: 13px;
+        padding: 0 30px;
+        transform: translate(-1%);
+    }
+    .two.wide.column button{
+        padding: 11px 20px;
+        width: 100px;
+        text-align: center;
+        margin-right: -15px;
+    }
+    .parallax input,button{
+        transform: translate(22%);
+
+    }
+
+
+    .i4{
+        text-align: center;
+    }
+    .i4 p {
+        text-align: center;
+    }
+    .i4 .iii p{
+        text-align: center;
+
+    }
+    .i-1 > i,p,span{
+        text-align: left;
+        direction: ltr;
+    }
+
+}
+/*--------------------------------------owl-------------------------------*/
+.owl{
+    width: 100%;
+    height: 245px;
+    background: #8D9190;
+    margin-top: -7px;
+}
+
+.owl-carousel{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    padding-top: 30px;
+    direction: ltr;
+
+}
+.owl-carousel i{
+    color: #FFFFFF;
+}
+.owl-carousel .owl-nav>button{
+    background: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+}
+.owl-carousel .owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+}
+.owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    right: 0;
+}
+.owl-img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    color: #FFFFFF;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.owl-img span{
+    line-height: 100px;
+}
+.owl-text p{
+    text-align: center;
+
+}
+
+
+
+/*----------------------------------------------end owl---------------------------------------------*/
+.i-1 {
+    padding: 60px 0;
+    direction: ltr;
+}
+.i-1 span{
+    font-size: 20px;
+}
+.i-1 .icon{
+    font-size: 25px;
+    margin:0 10px;
+}
+.i-1 p{
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.i-1 > i,p,span{
+    text-align: left;
+    direction: ltr;
+}
+.co-left .iii{
+    text-align: center;
+}
+.co-left .iii p{
+    direction: rtl;
+    text-align: right;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.co-left .iii .icon{
+    font-size: 25px;
+    transform: translate(25%);
+    margin:0 10px;
+}
+.co-left .iii span{
+    font-size: 20px;
+    text-align: right;
+}
+.co-left .iii{
+    padding: 60px 0;
+    text-align: right;
+}
+
+@media screen and (max-width: 800px),(max-width: 200px) {
+    .image-mobail img {
+        width: 200px;
+        height: 400px;
+        text-align: center;
+
+    }
+
+    .co-left {
+        margin-right: 5%;
+        direction: ltr;
+
+    }
+
+    .co-left .iii p {
+        text-align: center;
+    }
+
+    .co-left .iii {
+        text-align: center;
+
+    }
+
+    .i-1 i, span {
+        direction: ltr;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .co-left, .co-right {
+        text-align: center;
+    }
+
+    .co-left, .co-right p {
+        text-align: center;
+    }
+
+    .iii p {
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .i4 {
+        text-align: center;
+    }
+
+    .i4 p {
+        text-align: center;
+    }
+
+    .i4 .iii p {
+        text-align: center;
+
+    }
+
+    footer .socal {
+        padding: 30px 0;
+    }
+    footer .socal i a{
+        padding: 0 2px;
+    }
+}
+.parallax{
+    min-height: 250px;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url("../img/clouds-sea-gray-blue.jpg");
+    background-repeat: no-repeat;
+    direction: rtl;
+}
+
+.about{
+    width: 100%;
+    min-height: 350px;
+    margin-top: 20px;
+}
+
+.about-us{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 2px;
+
+}
+.dd{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.dd img{
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+footer{
+    width: 100%;
+    background-color: #444243;
+    direction: rtl;
+    min-height: 350px;
+    background-size: cover;
+}
+
+footer .socal {
+    text-align: center;
+    width: 100%;
+    min-height: 60px;
+    margin-top: 15px;
+
+}
+footer .socal a{
+    font-size: 25px;
+    padding: 20px;
+    color:#c2c4c5 ;
+}
+
+footer .socal :hover{
+    color: #5f6367;
+}
+footer .foot1,.foot2 {
+    text-align: right;
+    color: #c2c4c5;
+    line-height: 30px;
+}
+
+

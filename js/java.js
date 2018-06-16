@@ -1,0 +1,4 @@
+/*--------------*/
+$('.top-text')
+    .transition('pulse')
+;
